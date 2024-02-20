@@ -207,7 +207,7 @@ footer .col:last-child i{
     font-size: 10px;
 }
 .line{
-    width: clamp(33.33%, 50%, 70%);
+    width: clamp(20%, 50%, 70%);
     height: 3px;
     padding: calc(7px / 2) 0;
     background-color: #686868;

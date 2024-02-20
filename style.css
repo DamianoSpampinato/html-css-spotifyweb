@@ -116,6 +116,36 @@ nav{
 footer{
     height: 80px;
     background-color: #282828;
+    display: flex;
+}
+.col{
+    height: 100%;
+    width: 20%;
+    align-items: center;
+
+}
+.col:first-child{
+    gap:15px
+}
+.col>.img-container{
+    width: 50px;
+}
+.col>.img-container img{
+    width: 100%;
+}
+.fa-player{
+    margin-left: 10px;
+    color: #868686;
+}
+.fa-player i{
+    margin-right: 5px;
+}
+#album-name{
+    color: #fbfcfb;
+}
+#track-name{
+    font-size: 12px;
+    color:#868686
 }
 /* utility */
 .bg-transp{
@@ -124,7 +154,9 @@ footer{
 .flex{
     display: flex;
 }
-
+.grow{
+    flex-grow: 1;
+}
 .active{
     border-left:  5px solid #adff2f;
     color: #fbfcfb;
@@ -137,6 +169,9 @@ footer{
 
 .font-s{
     font-size:14px;
+}
+.bold{
+    font-weight: bold;
 }
 @media screen and (max-width: 601px){
     header{

@@ -16,8 +16,10 @@ body{
 .container-app{
     height: calc(100vh - 5rem);
     background-color: aqua;
-    overflow: hidden;
+    overflow-y: hidden;
 }
+
+/* header */
 header{
     display: flex;
     flex-direction: column;
@@ -113,11 +115,45 @@ nav{
     color: #fbfcfb;
     font-weight: bold;
 }
+/* /header */
+
+/* MAIN */
+
+main{
+    width: 100%;
+    overflow-y: auto;
+    background-color: #141922;
+}
+.sticky{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* id main */
+#upgrade-btn{
+    background-color: transparent;
+    padding: 10px 25px;
+    border-radius: 60px;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: #fbfcfb;
+    color: #fbfcfb;
+    margin-right: 15px;
+}
+/* /MAIN */
+
+/* FOOTER */
 
 footer{
     height: 80px;
     background-color: #282828;
     display: flex;
+    width: 100%;
+    overflow-x: hidden;
 }
 footer .col{
     height: 100%;
@@ -156,12 +192,16 @@ footer .col.grow{
     flex-shrink: 0;
     font-size: 20px;
     text-align: center;
+    min-width: 33.33%;
 }
 footer .col.grow i, 
 footer .col:last-child i{
     margin: 0 10px;
     color: #fbfcfb;
     
+}
+.player-bottom{
+    color: #fbfcfb;
 }
 .song-time{
     font-size: 10px;
@@ -205,8 +245,10 @@ footer .col:last-child i{
     top: 0;
     right: 0;
     display: none;
+/* /FOOTER */
 }
 /* HOVER */
+
 #time-line:hover #time-circle{
     display: inline-block;
 }

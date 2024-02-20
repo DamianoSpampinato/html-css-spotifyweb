@@ -7,7 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.logo-s{
+    display: none;
+}
 body{
     font-family: "Montserrat", sans-serif;
 }
@@ -98,12 +100,11 @@ nav{
     border-radius: 50%;
     background-color: #808080;
     margin-right: .625rem ;
-    
+    overflow: hidden;
 }
 .account .img-container img{
     width: 100%;
     object-fit: cover;
-    overflow: hidden;
     border-radius: 50%;   
 }
 
@@ -114,7 +115,7 @@ nav{
 
 footer{
     height: 80px;
-    background-color: brown;
+    background-color: #282828;
 }
 /* utility */
 .bg-transp{
@@ -136,4 +137,44 @@ footer{
 
 .font-s{
     font-size:14px;
+}
+@media screen and (max-width: 601px){
+    header{
+        width: 60px;
+        padding: 5px;
+        align-items: center;
+    }
+    .logo-container{
+        width: 40px;
+    }
+    .logo-container .logo-xl{
+        display: none;
+    }
+    .logo-container .logo-s{
+        display: inline-block;
+    }
+    header nav{
+        flex-grow: 1;
+        
+    }
+    .btn-text, .playlist-container, .playlist-title, .account-name{
+        display: none;
+    }
+    .app-download{
+        width: 20px;
+        margin: 0;
+    }
+    .app-download img{
+        width: 100%;
+    }
+    .border-b{
+        border-bottom: none;
+    }
+    .account .img-container{
+        margin: 0;
+    }
+    
+    
+
+    
 }

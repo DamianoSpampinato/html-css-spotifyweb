@@ -11,15 +11,19 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
-
+.container-app{
+    height: calc(100vh - 5rem);
+    background-color: aqua;
+}
 header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 5rem);
+    height: 100%;
     background-color: #000;
     width: 14.375rem;
     padding: 20px;
+    
 }
 header button{
     display: block;
@@ -51,19 +55,18 @@ nav{
 .playlist-container{
     color: #686868;
     margin-top: 1.2rem;
-    min-height: 150px;
-    overflow: auto;
+    flex-grow: 1;
+    overflow-y: auto;
 }
-.playlist-container h3{
+.playlist-title h3{
     color: #fbfcfb;
     margin-bottom: 1rem;
+    margin-top:1.5rem
+
 }
 
 .playlist-container > div{
     line-height: 2rem;
-}
-.playlist-container > div:first-child{
-    margin-top:1.5rem
 }
 
 #add-playlist{
@@ -87,6 +90,7 @@ nav{
 .account{
     margin-top: 1rem;
     align-items: center;
+
 }
 .account .img-container{
     width: 1.5625rem;
@@ -108,6 +112,10 @@ nav{
     font-weight: bold;
 }
 
+footer{
+    height: 80px;
+    background-color: brown;
+}
 /* utility */
 .bg-transp{
     background-color: transparent ;

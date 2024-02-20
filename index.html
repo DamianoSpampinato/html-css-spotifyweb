@@ -12,8 +12,8 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="col">
+    <div class="container-app">
+        <header>
             <div class="logo-container"><img src="img/logo.svg" alt=""></div>
             <nav>
                 <button class="bg-transp flex active font-s">
@@ -33,15 +33,17 @@
                     <span class="btn-icon">
                         <img src="img/libreria.svg" alt="">
                     </span>
-                   <span class="btn-text"> La tua libreria</span>
+                <span class="btn-text"> La tua libreria</span>
                 </button>
             </nav>
-            <div class="playlist-container">
+            <div class="playlist-title">
                 <h3>Playlist</h3>
                 <button class="bg-transp flex">
                     <div id="add-playlist">+</div>
                     Crea playlist
                 </button>
+            </div>
+            <div class="playlist-container">
                 <div class="font-s">Nome playlist</div>
                 <div class="font-s">Nome playlist</div>
                 <div class="font-s">Nome playlist</div>
@@ -49,17 +51,18 @@
                 <div class="font-s">Nome playlist</div>
                 <div class="font-s">Nome playlist</div>
             </div>
-        </div>
-        <div class="col">
+        
             <div class="border-b color-gray flex font-s"><div class="app-download flex"><img src="img/download.svg" alt=""></div> installa app</div>
             <div class="account flex">
                 <div class="img-container">
                     <img src="img/profile.svg" alt="">
                 </div>
-               <span class="account-name"> John Doe</span>
+            <span class="account-name"> John Doe</span>
             </div>
-        </div>
-    </header>
-    
+        
+        </header>
+        <main></main>
+    </div>
+    <footer></footer>
 </body>
 </html>

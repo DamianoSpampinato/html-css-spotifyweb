@@ -16,6 +16,7 @@ body{
 .container-app{
     height: calc(100vh - 5rem);
     background-color: aqua;
+    overflow: hidden;
 }
 header{
     display: flex;
@@ -118,19 +119,21 @@ footer{
     background-color: #282828;
     display: flex;
 }
-.col{
+footer .col{
     height: 100%;
     width: 20%;
     align-items: center;
 
 }
-.col:first-child{
-    gap:15px
+footer .col:first-child{
+    gap:15px;
+    min-width: 33.33%;
 }
-.col>.img-container{
+
+footer .col>.img-container{
     width: 50px;
 }
-.col>.img-container img{
+footer .col>.img-container img{
     width: 100%;
 }
 .fa-player{
@@ -147,6 +150,69 @@ footer{
     font-size: 12px;
     color:#868686
 }
+
+footer .col.grow{
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 20px;
+    text-align: center;
+}
+footer .col.grow i, 
+footer .col:last-child i{
+    margin: 0 10px;
+    color: #fbfcfb;
+    
+}
+.song-time{
+    font-size: 10px;
+}
+.line{
+    width: clamp(33.33%, 50%, 70%);
+    height: 3px;
+    padding: calc(7px / 2) 0;
+    background-color: #686868;
+    border-radius: 15px;
+    display: inline-block;
+}
+#time-line{
+    position: relative;
+}
+#volume-line{
+    position:relative
+}
+#volume{
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #fbfcfb;
+    width: 50%;
+}
+#time{
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #fbfcfb;
+    width: 50%;
+ 
+}
+#time-circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: #adff2f;
+    position: absolute;
+    transform: translate(0, -20%);
+    top: 0;
+    right: 0;
+    display: none;
+}
+/* HOVER */
+#time-line:hover #time-circle{
+    display: inline-block;
+}
+
+
+
 /* utility */
 .bg-transp{
     background-color: transparent ;
@@ -157,6 +223,7 @@ footer{
 .grow{
     flex-grow: 1;
 }
+
 .active{
     border-left:  5px solid #adff2f;
     color: #fbfcfb;

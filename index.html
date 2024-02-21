@@ -205,10 +205,10 @@
     <footer>
         <div class="col flex">
             <div class="img-container">
-                <img src="img/sinister.jpeg" alt="">
+                <img src="https://i.scdn.co/image/ab67616d00001e02745adc3f697ea1ec79d66901" alt="">
             </div>
             <span class="track-side font-s bold">
-                <div id="album-name">sinister</div>
+                <div id="album-name">My Heart Will Go On</div>
                 <div id="track-name">Brano Nome</div>
             </span>
             <span class="fa-player">
@@ -220,7 +220,8 @@
             <div class="button-container grow">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
+                <button id="play" type="button" onclick="play()"><i class="fa-regular fa-circle-play"></i></button>
+                <audio id="audio" src="img/My Heart Will Go On - (EAR RAPE).mp3"></audio>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
                 <div class="player-bottom">
@@ -243,5 +244,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+      </script>
 </body>
 </html>

@@ -162,6 +162,7 @@ main{
     width: calc(100% / 6 - 15px);
     flex-direction: column;
     text-align: center;
+   
 }
 
 .card .img-container{
@@ -174,8 +175,9 @@ main{
 }
 
 .main-hover{
-    display: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    background-color: transparent;
+    color: transparent;
     height: 100%;
     width: 100%;
     font-size: 50px;
@@ -184,6 +186,7 @@ main{
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.5s;
 }
 section{
     padding: 20px;
@@ -194,7 +197,11 @@ section small{
     color: #808080;
 }
 
+#artist-popular .img-container{
+    border-radius: 50%;
+    overflow: hidden;
 
+}
 /* id main */
 #upgrade-btn{
     background-color: transparent;
@@ -312,8 +319,22 @@ footer .col:last-child i{
 /* /FOOTER */
 }
 /* HOVER */
+/* hover header */
+header button:hover,
+.playlist-container *:hover,
+#install:hover,
+.app-download:hover
+{
+    color: #fbfcfb;
+}
+
+
 
 /* hover main */
+
+#upgrade-btn:hover{
+    border-color: #adff2f;
+}
 .main-nav-container nav > button:hover{
     color: #fbfcfb;
     border-color: #adff2f;
@@ -323,6 +344,8 @@ footer .col:last-child i{
     display: inline-block;
 }
 .card:hover .main-hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fbfcfb;
     display: flex;
     justify-content: center;
     align-items: center;
